@@ -1,0 +1,19 @@
+/*
+* Styling for the alert component.
+*/
+
+.alert {
+  position: absolute;
+  bottom: $margin-32;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: $margin-32;
+  width: 400px;
+  border-radius: $margin-16;
+  color: $purple-300;
+}
+
+.alert__purple {
+  @extend .alert;
+  background-color: $purple-100;
+}

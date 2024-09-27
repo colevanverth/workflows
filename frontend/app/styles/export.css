@@ -1,0 +1,353 @@
+/*
+* Defines SASS variables for the app. 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*
+Global CSS configurations.
+*/
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px;
+  color: #202020;
+}
+*:focus {
+  transition: border 0.1s ease-in;
+}
+*:hover {
+  transition: background 0.2s ease-in;
+}
+
+h1 {
+  font-size: 22.78px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20.25px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  font-size: 11.67px;
+}
+
+/*
+Styles for the workflows page. 
+*/
+.workflows__container {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workflows__header {
+  border-bottom: 1px solid #ebebeb;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+.workflows__header form {
+  margin-left: auto;
+}
+
+.workflows__body {
+  display: flex;
+  height: 100vh;
+}
+.workflows__body .workflows__body__menu {
+  width: 600px;
+  border-right: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+}
+.workflows__body .workflows__body__container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.workflows__body .workflows__body__container .workflows__body__display {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.workflow__select, .workflow__select__off, .workflow__select__on {
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14.22px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.workflow__select div, .workflow__select__off div, .workflow__select__on div {
+  color: #888888;
+  font-size: 11.67px;
+}
+
+.workflow__select__on {
+  background: #ebebeb;
+}
+
+.workflow__select__off:hover {
+  background: #ebebeb;
+}
+
+.workflow__form {
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.workflow__form label {
+  color: #535353;
+  font-size: 11.67px;
+}
+.workflow__form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.workflow__form .workflow__form__name {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.workflow__form .workflow__form__file {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.workflow__form .workflow__form__file input {
+  display: none;
+}
+.workflow__form .workflow__form__instructions {
+  flex-grow: 2;
+  flex-basis: 100%;
+}
+.workflow__form .workflow__form__file__input, .workflow__form .workflow__form__file__done, .workflow__form .workflow__form__file__upload {
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebebeb;
+}
+.workflow__form .workflow__form__file__upload {
+  color: #bbbbbb;
+}
+.workflow__form .workflow__form__file__done {
+  color: #202020;
+}
+.workflow__form .workflow__form__input, .workflow__form .workflow__form__file__input, .workflow__form .workflow__form__file__upload, .workflow__form .workflow__form__file__done {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  resize: none;
+}
+.workflow__form .workflow__form__input::placeholder, .workflow__form .workflow__form__file__input::placeholder, .workflow__form .workflow__form__file__upload::placeholder, .workflow__form .workflow__form__file__done::placeholder {
+  color: #bbbbbb;
+}
+.workflow__form .workflow__form__input:focus, .workflow__form .workflow__form__file__input:focus, .workflow__form .workflow__form__file__upload:focus, .workflow__form .workflow__form__file__done:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #bd59ff;
+}
+
+.workflow__actions {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  gap: 16px;
+}
+
+.workflow__button, .workflow__button__monotone, .workflow__button__color {
+  max-height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.workflow__button__color {
+  background: #bd59ff;
+  border: none;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+}
+.workflow__button__color span {
+  color: white;
+}
+.workflow__button__color:hover {
+  background: #9345b7;
+}
+
+.workflow__button__monotone {
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  justify-content: center;
+  padding: 12px;
+}
+.workflow__button__monotone:hover {
+  background: #ebebeb;
+}
+
+.workflow__saved {
+  color: #888888;
+}
+
+.workflow__search {
+  border: none;
+}
+.workflow__search:focus {
+  outline: none;
+}
+
+.workflow__search__container {
+  padding: 16px 32px 16px 32px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  gap: 16px;
+}
+
+.workflow__search__icon {
+  background: url("../images/search.svg");
+  height: 16px;
+  width: 16px;
+  display: block;
+}
+
+.workflows__list__container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workflows__body__top {
+  display: flex;
+  align-items: center;
+}
+
+.workflows__body__actions {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+/*
+Styles for the nav component.
+*/
+nav {
+  border-bottom: 1px solid #ebebeb;
+  padding: 16px;
+  display: flex;
+  background: #fafafa;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav__signout__container {
+  margin-left: auto;
+}
+
+.nav__signout {
+  color: #888888;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*
+* Styling for the alert component.
+*/
+.alert, .alert__purple {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 32px;
+  width: 400px;
+  border-radius: 16px;
+  color: #1e0428;
+}
+
+.alert__purple {
+  background-color: #f0cfff;
+}
+
+/*
+* Styling for the index/sign-in page. 
+*/
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ebebeb;
+  border-radius: 32px;
+  padding: 32px;
+}
+.login__form input {
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+.login__form input::placeholder {
+  color: #bbbbbb;
+}
+.login__form input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #bd59ff;
+}
+.login__form label {
+  color: #535353;
+  font-size: 11.67px;
+  margin-bottom: 8px;
+}
+.login__form button {
+  cursor: pointer;
+  padding: 16px;
+  color: #f9f2ff;
+  background: #bd59ff;
+  border: none;
+  border-radius: 8px;
+}
+.login__form button:hover {
+  background: #9345b7;
+}
+
+.form__background {
+  background: #fafafa;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=export.css.map */

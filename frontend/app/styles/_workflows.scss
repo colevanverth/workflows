@@ -1,0 +1,221 @@
+/*
+Styles for the workflows page. 
+*/
+
+.workflows__container {
+  border-radius: $margin-12;
+  display: flex;
+  flex-direction: column;
+}
+
+.workflows__header {
+  border-bottom: 1px solid $neutral-100;
+  padding: $margin-16;
+  display: flex;
+  align-items: center;
+  form {
+    margin-left: auto;
+  }
+}
+
+.workflows__body {
+  display: flex;
+  height: 100vh;
+  .workflows__body__menu {
+    width: $page;
+    border-right: 1px solid $neutral-100;
+    display: flex;
+    flex-direction: column;
+  }
+  .workflows__body__container {
+    padding-top: $margin-64;
+    padding-bottom: $margin-64;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .workflows__body__display {
+      display: flex;
+      flex-direction: column;
+      width: 800px; // TODO
+    }
+  }
+}
+
+.workflow__select {
+  text-decoration: none;
+  padding: $margin-16;
+  border-radius: $margin-12;
+  border: none;
+  font-size: $size-p-small;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: $margin-8;
+  div {
+    color: $neutral-200;
+    font-size: $size-a;
+  }
+}
+
+.workflow__select__on {
+  @extend .workflow__select;
+  background: $neutral-100;
+}
+
+.workflow__select__off {
+  @extend .workflow__select;
+  &:hover {
+    background: $neutral-100;
+  }
+}
+
+.workflow__form {
+  padding-top: $margin-32;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin-32;
+  label {
+    color: $neutral-250;
+    font-size: $size-a;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: $margin-8;
+  }
+  .workflow__form__name {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .workflow__form__file {
+    flex-grow: 1;
+    flex-basis: 0;
+    input {
+      display: none;
+    }
+  }
+  .workflow__form__instructions {
+    flex-grow: 2;
+    flex-basis: 100%;
+  }
+  .workflow__form__file__input {
+    @extend .workflow__form__input;
+    cursor: pointer;
+    font-size: $size-p;
+    display: flex;
+    align-items: center;
+    border: 1px solid $neutral-100;
+  }
+
+  .workflow__form__file__upload {
+    @extend .workflow__form__file__input;
+    color: $neutral-150;
+  }
+  .workflow__form__file__done {
+    @extend .workflow__form__file__input;
+    color: $neutral-300;
+  }
+
+  .workflow__form__input {
+    background-color: transparent;
+    border: 1px solid $neutral-100;
+    border-radius: $margin-8;
+    padding: $margin-16;
+    box-sizing: border-box;
+    resize: none;
+    &::placeholder {
+      color: $neutral-150;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 2px $purple-150;
+    }
+  }
+}
+
+.workflow__actions {
+  display: flex;
+  align-items: center;
+  padding-top: $margin-16;
+  gap: $margin-16;
+}
+
+.workflow__button {
+  max-height: calc($margin-12 * 2 + $margin-16);
+  cursor: pointer;
+  border-radius: $margin-8;
+  display: flex;
+  align-items: center;
+  gap: $margin-8;
+}
+
+.workflow__button__color {
+  @extend .workflow__button;
+  background: $purple-150;
+  border: none;
+  span {
+    color: white;
+  }
+  justify-content: space-between;
+  border-radius: $margin-8;
+  &:hover {
+    background: $purple-200;
+  }
+  padding: $margin-12 $margin-16 $margin-12 $margin-16;
+}
+
+.workflow__button__monotone {
+  @extend .workflow__button;
+  background: $neutral-50;
+  border: 1px solid $neutral-100;
+  justify-content: center;
+  &:hover {
+    background: $neutral-100;
+  }
+  padding: $margin-12;
+}
+
+.workflow__saved {
+  color: $neutral-200;
+}
+
+.workflow__search {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.workflow__search__container {
+  padding: $margin-16 $margin-32 $margin-16 $margin-32;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $neutral-100;
+  width: 100%;
+  gap: $margin-16;
+}
+
+.workflow__search__icon {
+  background: url("../images/search.svg");
+  height: $margin-16;
+  width: $margin-16;
+  display: block;
+}
+
+.workflows__list__container {
+  padding: $margin-16;
+  display: flex;
+  flex-direction: column;
+  gap: $margin-16;
+}
+
+.workflows__body__top {
+  display: flex;
+  align-items: center;
+}
+
+.workflows__body__actions {
+  display: flex;
+  gap: $margin-16;
+  margin-left: auto;
+}

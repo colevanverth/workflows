@@ -1,0 +1,10 @@
+flask
+celery
+flask_sqlalchemy
+redis
+python-dotenv
+psycopg2
+flask-cors
+bcrypt
+black
+openai

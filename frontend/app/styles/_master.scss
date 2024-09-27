@@ -1,0 +1,41 @@
+/*
+Global CSS configurations.
+*/
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-primary !important;
+  font-size: $size-p;
+  color: $neutral-300;
+
+  &:focus {
+    transition: border 0.1s ease-in;
+  }
+
+  &:hover {
+    transition: background 0.2s ease-in;
+  }
+}
+
+h1 {
+  font-size: $size-h1;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: $size-h2;
+  font-weight: 500;
+}
+
+p {
+  font-size: $size-p;
+  font-weight: 400;
+}
+
+a {
+  font-size: $size-a;
+}

@@ -1,0 +1,48 @@
+/*
+* Defines SASS variables for the app. 
+*/
+
+// Font.
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+$font-family-primary: "Inter", sans-serif;
+
+// Neutral colors.
+$neutral-50: #fafafa;
+$neutral-100: #ebebeb;
+$neutral-150: #bbbbbb;
+$neutral-200: #888888;
+$neutral-250: #535353;
+$neutral-300: #202020;
+
+// Purple colors.
+$purple-50: #f9f2ff;
+$purple-100: #f0cfff;
+$purple-150: #bd59ff;
+$purple-200: #9345b7;
+$purple-250: #390b48;
+$purple-300: #1e0428;
+
+// Red colors.
+$red-50: #fff2f2;
+$red-100: #ffcfcf;
+$red-150: #ff7676;
+$red-200: #b74545;
+$red-250: #480b0b;
+$red-300: #280404;
+
+// Margins/padding.
+$margin-64: 64px;
+$margin-32: 32px;
+$margin-16: 16px;
+$margin-12: 12px;
+$margin-8: 8px;
+
+// Page margins.
+$page: 600px;
+
+// Font sizes.
+$size-h1: 22.78px;
+$size-h2: 20.25px;
+$size-p: 16px;
+$size-p-small: 14.22px;
+$size-a: 11.67px;

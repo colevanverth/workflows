@@ -1,0 +1,28 @@
+/*
+Styles for the nav component.
+*/
+
+nav {
+  border-bottom: 1px solid $neutral-100;
+  padding: $margin-16;
+  display: flex;
+  background: $neutral-50;
+  align-items: center;
+  gap: $margin-16;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: $size-p;
+}
+
+.nav__signout__container {
+  margin-left: auto;
+}
+.nav__signout {
+  color: $neutral-200;
+  font-size: $margin-16;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
