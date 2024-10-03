@@ -9,6 +9,7 @@ a user can upload a `csv` spreadsheet and request alterations in pure English (e
 
 ## Key features
 
+- REST api and backend
 - Convert `csv` files in pure English
 - Create, remove, edit, and fuzzy search for workflows
 - Session based user authentication
